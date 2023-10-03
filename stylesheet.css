@@ -17,7 +17,18 @@
 body{
   font-size: 32px;
   font-family: "Poppins";
-  color: var(--off_black)
+  color: var(--off_black);
+  width: 100%;
+  background-color: var(--off_white);
+}
+
+.container{
+  width: 45%;
+  margin: 5rem auto;
+  background-color: var(--white);
+  padding: 2rem 3rem;
+  border-radius: 5%;
+  border-bottom-right-radius: 30%;
 }
 
 
@@ -28,10 +39,13 @@ body{
   padding: 1rem;
   color: var(--white);
   background-color: var(--purple);
+  position: relative;
+  top: 4rem;
 }
 
 #submitButton:hover {
   background-color: var(--off_black);
+  position: relative;
 }
 
 
@@ -39,9 +53,35 @@ h1 bold {
   color: var(--purple)
 }
 
-#day, #month,#year {
+.labels{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.inputs{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+#dayLabel, #monthLabel, #yearLabel {
+  width: 27%;
+  margin-right: 5%;
+  color: var(--smokey_grey);
+  font-size: 1rem;
+}
+
+#day, #month, #year {
   border:solid 0.5px var(--light_grey);
   outline:solid 1px var(--light_grey);
+  color: var(--smokey_grey);
+  width: 27%;
+  margin-right: 5%;
+  border-radius: .5rem;
+  height: 3rem;
+  font-size: 1rem;
 }
 
 #day:focus, #month:focus, #year:focus {
@@ -49,7 +89,10 @@ h1 bold {
 }
 
 #dateInput {
-  border-bottom: 1px solid var(--light_grey)
+  border-bottom: 1px solid var(--light_grey);
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 :focus{
