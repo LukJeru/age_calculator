@@ -24,6 +24,7 @@ body{
 
 .container{
   width: 45%;
+  height: 30rem;
   margin: 5rem auto;
   background-color: var(--white);
   padding: 2rem 3rem;
@@ -40,7 +41,7 @@ body{
   color: var(--white);
   background-color: var(--purple);
   position: relative;
-  top: 4rem;
+  top: 4.25rem;
 }
 
 #submitButton:hover {
@@ -57,6 +58,7 @@ h1 bold {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  margin-bottom: .5rem;
 }
 
 .inputs{
@@ -76,12 +78,14 @@ h1 bold {
 #day, #month, #year {
   border:solid 0.5px var(--light_grey);
   outline:solid 1px var(--light_grey);
-  color: var(--smokey_grey);
+  color: var(--off_black);
   width: 27%;
   margin-right: 5%;
   border-radius: .5rem;
+  padding-left: .8rem;
   height: 3rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 #day:focus, #month:focus, #year:focus {
@@ -95,6 +99,22 @@ h1 bold {
   justify-content: space-between;
 }
 
+.output{
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 :focus{
   border-color: var(--purple);
+}
+
+#monthsOutput {
+  position: relative;
+  bottom: 4rem;
+}
+
+#daysOutput {
+  position: relative;
+  bottom: 8rem;
 }
