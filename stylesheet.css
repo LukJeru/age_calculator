@@ -55,7 +55,7 @@ h1 bold {
   color: var(--purple)
 }
 
-.labels{
+#labels{
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -142,7 +142,7 @@ h1 bold {
     max-width: 100%;
     margin: 4rem auto;
   }
-  .labels{
+  #labels{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -211,7 +211,7 @@ h1 bold {
     max-width: 100%;
     margin: 4rem auto;
   }
-  .labels{
+  #labels{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -228,7 +228,7 @@ h1 bold {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0 auto;
   }
 

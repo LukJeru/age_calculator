@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <script src="script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Age calculator app</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <form id="dateInput">
-      <div class="labels">
+    <form id="dateInput" action="">
+      <div id="labels">
         <label for="day" id="dayLabel">Day</label>
         <label for="month" id="monthLabel">Month</label>
         <label for="year" id="yearLabel">Year</label>
       </div>
       <div class="inputs">
-        <input type="text" id="day" name="day">
-        <input type="text" id="month" name="month">
-        <input type="text" id="year" name="year">
+        <input type="text" id="day" name="day" required>
+        <input type="text" id="month" name="month" required>
+        <input type="text" id="year" name="year" required>
       </div>
       <input type="image" src="images/icon-arrow.svg" id="submitButton">
     </form>
     <div id="error_message">
-      <p>This field is required</p>
-      <p>This field is required</p>
-      <p>This field is required</p>
+      <p id="first_error">This field is required</p>
+      <p id="second_error">This field is required</p>
+      <p id="third_error">This field is required</p>
     </div>
     <div class="output">
       <h1 id="yearsOutput"><bold>38</bold> years</h1>
